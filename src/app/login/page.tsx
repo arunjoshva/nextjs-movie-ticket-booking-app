@@ -28,6 +28,7 @@ export default function LoginPage(){
             });
 
             router.push("/");
+            router.refresh();
         } catch (error) {
             if(axios.isAxiosError(error)){
                 setError(
