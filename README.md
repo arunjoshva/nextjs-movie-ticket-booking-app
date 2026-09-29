@@ -107,3 +107,55 @@ The BookingSeat table uses a unique constraint on:
 ```
 showKey + seatNumber
 ```
+to prevent the same seat from being booked more than once for the same show.
+
+## Authentication
+
+BookShows uses custom JWT-based authentication.
+
+Passwords are securely hashed using bcryptjs, and authenticated users receive a session cookie used to access protected booking functionality.
+
+## Booking Flow
+
+```
+Browse Movies
+      ↓
+Movie Details
+      ↓
+Select Theatre & Show
+      ↓
+Select Seats
+      ↓
+Login / Register
+      ↓
+Confirm Booking
+      ↓
+Booking Confirmation
+      ↓
+My Bookings
+```
+## Deployment
+
+The application is deployed using Vercel.
+
+Production deployment:
+
+https://nextjs-movie-ticket-booking-app.vercel.app/
+
+The project is connected to GitHub, and the main branch is used for production deployments.
+
+## Responsive Design
+
+The application is designed to work across:
+
+- Desktop
+- Tablet
+- Mobile
+
+The movie listing, show selection, and seat selection interfaces are optimized for smaller screens.
+
+## Author
+
+Arun Joshva
+
+Full Stack Developer
